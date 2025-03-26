@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jun's Clinic</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/AI-Doctor.png') }}" alt="Dr. Jun">
+            <h1>Jun's Clinic</h1>
+        </div>
+        <div class="nav">
+            <a href="https://x.com/JunsClinic">Twitter</a>
+            <a href="https://github.com/yourusername/JunsClinic">GitHub</a>
+            <button onclick="window.location.href='/chat?lang=en'">English</button>
+            <button onclick="window.location.href='/chat?lang=zh'">中文</button>
+        </div>
+    </div>
+    <div class="main-content">
+        <h2>Welcome to Jun's Clinic</h2>
+        <p>Your AI-powered healthcare assistant. Start a chat to get medical guidance now!</p>
+        <a href="/chat" class="btn">Start Chat</a>
+    </div>
+</body>
+</html>
